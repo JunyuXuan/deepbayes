@@ -1,46 +1,68 @@
+
 body {
-    font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    padding: 0;
-    background: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
     color: #333;
 }
+
 header {
-    background: linear-gradient(to right, #4b6cb7, #182848);
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
     color: white;
-    padding: 2em;
+    padding: 2rem;
     text-align: center;
 }
+
 nav {
-    background: #333;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    background: #333;
+    padding: 0.5rem;
 }
+
 nav a {
     color: white;
-    padding: 1em;
     text-decoration: none;
-    transition: background 0.3s;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
 }
+
 nav a:hover {
-    background: #555;
+    color: #8f94fb;
 }
+
 main {
-    padding: 2em;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
 }
-section {
-    margin-bottom: 2em;
+
+.intro, .people {
+    margin-bottom: 2rem;
 }
+
+.profile {
+    display: inline-block;
+    width: 200px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+}
+
 footer {
     background: #333;
     color: white;
     text-align: center;
-    padding: 1em;
-}
-img.profile {
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
+    padding: 1rem;
 }
