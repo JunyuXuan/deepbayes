@@ -1,0 +1,1 @@
+console.log('Fortuin Lab site');
